@@ -25,7 +25,7 @@ jobs:
           overwrite: false
 
       - name: "Test VirusTotal Action"
-        uses: cssnr/virustotal-action@0a7e1d5535b7e1695d2b9a0d389cdd586c616b59
+        uses: cssnr/virustotal-action@outputs
         id: vt
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
