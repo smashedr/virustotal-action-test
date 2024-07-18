@@ -22,11 +22,10 @@ jobs:
           repo_token: ${{ secrets.GITHUB_TOKEN }}
           file: README.md
           tag: ${{ github.ref }}
-          overwrite: true
-          file_glob: true
+          overwrite: false
 
       - name: "Test VirusTotal Action"
-        uses: cssnr/virustotal-action@outputs
+        uses: cssnr/virustotal-action@0a7e1d5535b7e1695d2b9a0d389cdd586c616b59
         id: vt
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
